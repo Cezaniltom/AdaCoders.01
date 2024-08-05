@@ -10,64 +10,117 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="cabecalho"> <!--Cabeçalho-->
+    <header id="inicio" class="cabecalho"> <!--Cabeçalho-->
         <ul class="lista">
-            <li><a href="#">INICIO</a></li>
-            <li><a href="#">QUEM SOU EU?</a></li>
-            <li><a href="#">IDIOMAS</a></li>
-            <li><a href="#">PROJETOS</a></li>
-            <li><a href="#">EMPRESAS</a></li>
-            <li><a href="#">CONTATO</a></li>
+            <li><a href="#inicio">INICIO</a></li>
+            <li><a href="#quem-sou">QUEM SOU EU?</a></li>
+            <li><a href="#linguas">IDIOMAS</a></li>
+            <li><a href="#xp-profissional">EXPERIÊNCIAS</a></li>
+            <li><a href="#trabalho">EMPRESAS</a></li>
+            <li><a href="#contato">CONTATO</a></li>
         </ul>
     </header>
 
     <main> <!--Conteúdo-->
 
-        <h2>Olá! Meu nome é Francisco Cezaniltom Soares silva</h2>
+        <h2 id="quem-sou" class="titulo">Olá! Meu nome é Francisco Cezaniltom Soares Silva</h2>
 
-        <div>
-            <img src="assets/image.jpg" alt="Imagem de perfil"> <!--Imagem de Perfil-->
+        <div >
+            <img class="profile" src="assets/image.jpg" alt="Imagem de perfil"> <!--Imagem de Perfil-->
 
-            <p>Me chamo Cezaniltom... Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores at quos perspiciatis fugiat unde ab, doloremque provident necessitatibus natus explicabo. Est eius blanditiis rerum dolorum sapiente voluptates porro maxime nihil.</p>
+            <p>Natural de Cascavel - CE, tenho 25 anos, sou pai do Ian Cesar de 5 meses, e sou graduado em Analise e Desenvolvimento de Sistemas, onde aprendi muitos conceitos de programação que utilizo eventualmente no meu dia a dia.
+            <br/>Atualmente estou em transição de carreira, trabalhando como suporte help desk, mas já procurando aprimorar minhas habilidade para encarar o mercado de desenvolvimento e conseguir me destacar pelas minhas softs e hard skill. <br/>
+            Essa foi minha primeira página de desenvolvimento no qual realizei tudo sozinho sem o famoso cópia e cola, então independente do resultado, eu tô feliz pra caramba!!!
+            <!-- Como um entusiasta da área de tecnologia desde os meus 14 anos, sempre fui bastante curioso em saber como as coisas funcionavam, desde as peças do meu falecido notebook, até as páginas web no qual sempre me intrigavam. Não tive muito direcionamento sobre qual carreira seguir na minha adolescência, apesar de já saber o que queria, mas por falta de incentivo(dinheiro), optei por iniciar minha jornada profissional como jovem aprendiz, onde atuei em uma empresa de curtume (couros bovinos) ligado diretamente a produção. Pude aprender bastante coisa e me desenvolvi bastante como profissional na área de logística industrial. <br/>  -->
+            </p>
 
         </div>
-
+        <div id="xp-profissional"> 
+            <h2 class="titulo-linguagem">EXPERIÊNCIA PROFISSIONAL</h2>
+        </div>
         <table>
             <thead>
                 <tr>
                     <th>EMPRESAS</th>
-                    <th>EMPRESA 2</th>
-                    <th>EMPRESA 3</th>
+                    <th>LINGUAGEM UTILIZADA</th>
+                    <th>PROJETO</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>Empresa 1</td>
-                    <td>Experiência 1</td>
-                    <td>Projeto 1</td>
+                    <td>TOTVS</td>
+                    <td>HTML, CSS <br/> e JS</td>
+                    <td><img src="https://www.intergate.net.br/blog/wp-content/uploads/2017/02/Logo1.png" alt="logo TOTVS" width="100px"></td>
                 </tr>
                 <tr>
-                    <td>Empresa 2</td>
-                    <td>Experiência 2</td>
-                    <td>Projeto 2</td>
+                    <td>NUBANK</td>
+                    <td>HTML, CSS, JS <br/> e REACT</td>
+                    <td><img src="https://fdr.com.br/wp-content/uploads/2020/10/nubank-logo.png" alt="Logo NUBANK" width="100px"></td>
                 </tr>
                 <tr>
-                    <td>Empresa 3</td>
-                    <td>Experiência 3</td>
-                    <td>Projeto 3</td>
+                    <td>PICPAY</td>
+                    <td>HTML, CSS, JS <br/> e ANGULAR</td>
+                    <td><img src="https://liongaming.io/wp-content/uploads/2024/04/picpay-1-white.png" alt="Logo IFOOD" width="100px"></td>
                 </tr>
             </tbody>
         </table>
 
-        <div>
+        <div id="linguas" class="idiomas">
+
+            <h2 class="titulo-linguagem">Idiomas:</h2>
             <ul>
-                <li>Português</li>
-                <li>Inglês</li>
-                <li>Espanhol</li>
+                <li>Português (Fluente)</li>
+                <li>Inglês (Básico)</li>
+                <li>Espanhol (Básico)</li>
             </ul>
         </div>
+        <div> 
+            <h2 class="titulo-linguagem">RANKING DE EMPRESAS QUE DESEJO ATUAR</h2>
+        </div>
+        <table id="trabalho">
+            <thead>
+                <tr>
+                    <th>POSIÇÃO</th>
+                    <th>EMPRESAS</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1º POSIÇÃO</td>
+                    <td>ADA TECH</td>
+                </tr>
+                <tr>
+                    <td>2º POSIÇÃO</td>
+                    <td>SANTANDER</td>
+                </tr>
+                <tr>
+                    <td>3º POSIÇÃO</td>
+                    <td>BIG TECH NACIONAL</td>
+                </tr>
+                <tr>
+                    <td>4º POSIÇÃO</td>
+                    <td>BIG TECH INTERNACIONAL</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <form id="contato">
+            <div>
+                <label>Nome:</label>
+                <input placeholder="Digite seu nome" type="text" name="nome_usuario">
+            </div>
+            <div>
+                <label>E-mail:</label>
+                <input placeholder="Digite seu email" type="email" name="email_usuario">
+            </div>
+            <div>
+                <label>Texto:</label>
+                <textarea placeholder="Escreva-me uma mensagem" name="texto_usuario"></textarea>
+            </div>
+        </form>   
     </main>
 
+    
     <footer> ©Copyright. TODOS OS DIREITOS RESERVADOS </footer> <!--Rodapé-->
 
     <script src="script.js"></script>
