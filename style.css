@@ -19,13 +19,13 @@ a:visited, a:active {
     color: inherit;
 }
 
+
 .cabecalho{
     font-size: 1.1rem;
-    margin: 0 auto;
+    margin: 12 auto;
     padding: 1rem;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -109,10 +109,8 @@ table {
     padding: 0px 0 80px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     border-collapse: collapse;
-    height: 200px;
 }
 
 td {
@@ -121,16 +119,20 @@ td {
 }
   
 th {
-    width: 200px;
-    padding: 6px;
+    width: 208px;
+    padding: 10px 50px 10px 10px;
     color: #00BCF5;
 }
   
 
   
-tr:hover {
-    background-color: #FFFFFF;
+.selection:hover {
+    background-color: #505364;
     color: #00BCF5;
+}
+
+.idiomas {
+    padding: 200px;
 }
 
 .idiomas li {
@@ -155,10 +157,49 @@ label {
     padding-right: 10px;
 }
 
+input {
+    outline-style: none;
+}
+
+textarea {
+    outline-style: none;
+    padding: 10px;
+}
+
+.empresas {
+    width: 500px;
+}
+
+.titulo-msg {
+    font-size: 25px;
+    color: #00BCF5;
+    padding-top: 200px;
+}
+
+.mensagem {
+    width: 200px;
+    height: 100px;
+}
+
+.ajuste {
+    padding: 0;
+    margin: -80px 0 20px;
+}
+
+#contato {
+    width: 100%;
+    display: inline-flex;
+    flex-direction: r;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
 footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 10px;
 }
 
 @media only screen and (min-width: 768px) {

@@ -28,7 +28,7 @@
         <div >
             <img class="profile" src="assets/image.jpg" alt="Imagem de perfil"> <!--Imagem de Perfil-->
 
-            <p>Natural de Cascavel - CE, tenho 25 anos, sou pai do Ian Cesar de 5 meses, e sou graduado em Analise e Desenvolvimento de Sistemas, onde aprendi muitos conceitos de programação que utilizo eventualmente no meu dia a dia.
+            <p>Natural de Cascavel - CE, tenho 25 anos, sou casado e pai do Ian César de 5 meses, sou graduado em Analise e Desenvolvimento de Sistemas, onde aprendi muitos conceitos de programação que utilizo eventualmente no meu dia a dia.
             <br/>Atualmente estou em transição de carreira, trabalhando como suporte help desk, mas já procurando aprimorar minhas habilidade para encarar o mercado de desenvolvimento e conseguir me destacar pelas minhas softs e hard skill. <br/>
             Essa foi minha primeira página de desenvolvimento no qual realizei tudo sozinho sem o famoso cópia e cola, então independente do resultado, eu tô feliz pra caramba!!!
             <!-- Como um entusiasta da área de tecnologia desde os meus 14 anos, sempre fui bastante curioso em saber como as coisas funcionavam, desde as peças do meu falecido notebook, até as páginas web no qual sempre me intrigavam. Não tive muito direcionamento sobre qual carreira seguir na minha adolescência, apesar de já saber o que queria, mas por falta de incentivo(dinheiro), optei por iniciar minha jornada profissional como jovem aprendiz, onde atuei em uma empresa de curtume (couros bovinos) ligado diretamente a produção. Pude aprender bastante coisa e me desenvolvi bastante como profissional na área de logística industrial. <br/>  -->
@@ -47,17 +47,17 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                <tr class="selection">
                     <td>TOTVS</td>
                     <td>HTML, CSS <br/> e JS</td>
                     <td><img src="https://www.intergate.net.br/blog/wp-content/uploads/2017/02/Logo1.png" alt="logo TOTVS" width="100px"></td>
                 </tr>
-                <tr>
+                <tr class="selection">
                     <td>NUBANK</td>
                     <td>HTML, CSS, JS <br/> e REACT</td>
                     <td><img src="https://fdr.com.br/wp-content/uploads/2020/10/nubank-logo.png" alt="Logo NUBANK" width="100px"></td>
                 </tr>
-                <tr>
+                <tr class="selection">
                     <td>PICPAY</td>
                     <td>HTML, CSS, JS <br/> e ANGULAR</td>
                     <td><img src="https://liongaming.io/wp-content/uploads/2024/04/picpay-1-white.png" alt="Logo IFOOD" width="100px"></td>
@@ -78,44 +78,52 @@
             <h2 class="titulo-linguagem">RANKING DE EMPRESAS QUE DESEJO ATUAR</h2>
         </div>
         <table id="trabalho">
-            <thead>
+            <thead class="empresas">
                 <tr>
                     <th>POSIÇÃO</th>
                     <th>EMPRESAS</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                <tr class="selection">
                     <td>1º POSIÇÃO</td>
                     <td>ADA TECH</td>
                 </tr>
-                <tr>
+                <tr class="selection">
                     <td>2º POSIÇÃO</td>
                     <td>SANTANDER</td>
                 </tr>
-                <tr>
+                <tr class="selection">
                     <td>3º POSIÇÃO</td>
                     <td>BIG TECH NACIONAL</td>
                 </tr>
-                <tr>
+                <tr class="selection">
                     <td>4º POSIÇÃO</td>
                     <td>BIG TECH INTERNACIONAL</td>
                 </tr>
             </tbody>
         </table>
 
+        <div>
+            <h2 class="titulo-msg">
+                DEIXE-ME UMA MENSAGEM
+            </h2>
+        </div>
+
         <form id="contato">
-            <div>
-                <label>Nome:</label>
-                <input placeholder="Digite seu nome" type="text" name="nome_usuario">
-            </div>
-            <div>
-                <label>E-mail:</label>
-                <input placeholder="Digite seu email" type="email" name="email_usuario">
-            </div>
-            <div>
-                <label>Texto:</label>
-                <textarea placeholder="Escreva-me uma mensagem" name="texto_usuario"></textarea>
+            <div class="ajuste">
+                <div>
+                    <label>Nome:</label>
+                    <input placeholder="Digite seu nome" type="text" name="nome_usuario">
+                </div>
+                <div>
+                    <label>E-mail:</label>
+                    <input placeholder="Digite seu email" type="email" name="email_usuario">
+                </div>
+                <div>
+                    <label>Mensagem:</label>
+                    <textarea class="mensagem" placeholder="Escreva-me uma mensagem" name="texto_usuario"></textarea>
+                </div>
             </div>
         </form>   
     </main>
