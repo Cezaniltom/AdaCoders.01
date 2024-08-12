@@ -96,10 +96,10 @@ main h2 {
     font-family: monospace;
     font-weight: 400;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    font-size: 3rem;
+    font-size: 2.6rem;
     width: 100vw;
     height: 100vh;
 }
@@ -128,6 +128,7 @@ div.life-detail {
     width: 100vw;
     height: 90vh;
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: column;
     align-items: center;
     padding: 20px;
@@ -135,6 +136,7 @@ div.life-detail {
 
 h2.title {
     margin: 20px 0;
+    padding: 100px 0 20px;
     font-family: monospace;
     font-weight: 400;
     font-size: 3rem;
@@ -150,15 +152,12 @@ div.life-detail img {
     border: 3px solid ;
 }
 
-
 div.life-detail p {
     color: var(--color-background);
     display: flex;
-    flex-direction: row;
-    align-content: space-around;
     flex-wrap: wrap;
+    padding: 40px;
     font-size: 2rem;
-    padding: 0 30px;
     margin: 20px;
     aspect-ratio: 4/1;
     border-radius: 20px;
@@ -174,6 +173,16 @@ div.life-detail p {
     0px 8px 17px rgba(0, 0, 0, 0.29),
     inset 0px 6px 8px rgba(255, 255, 255, 0.1),
     inset 0px -4px 5px rgba(0, 0, 0, 0.22);
+}
+
+h2.title-xp {
+    margin: 20px 0;
+    padding: 500px 0 20px;
+    font-family: monospace;
+    font-weight: 400;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
 }
 
 table.xp-table {
@@ -197,11 +206,21 @@ table{
 }
 
 div.select-language {
-    padding-top: 300px;
+    padding-top: 10px;
     font-weight: 400;
     font-size: 1.5rem;
     width: 100vw;
     height: 100vh;
+}
+
+h2.title-langs {
+    margin: 20px 0;
+    padding: 400px 0 10px 0;
+    font-family: monospace;
+    font-weight: 400;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
 }
 
 ul.langs {
@@ -220,7 +239,7 @@ ul.langs {
 ul.langs li.option {
     color: var(--hovered-color);
     list-style: none;
-    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     padding: 20px;
     margin: 0 20px;
@@ -235,13 +254,23 @@ ul.langs li.option:hover {
     color: var(--color-words);
 } 
 
+h2.title-job {
+    margin: 20px 0;
+    padding: 100px;
+    font-family: monospace;
+    font-weight: 400;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
 section.slider {
     margin: 0 auto;
     width: 800px;
     height: 400px;
     overflow: hidden;
     border-radius: 50px;
-    padding: 40px 0 600px 0;
+    padding-bottom: 20px;
 }
 
 div.slides {
@@ -341,13 +370,18 @@ label.manual-btn:hover {
     background-color: var(--color-words);
 }
 
-div.form-contact {
-    width: 100vw;
-    height: 80vh;
+h2.title-contact {
+    margin: 20px 0;
+    padding: 300px 0 10px;
+    font-family: monospace;
+    font-weight: 400;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
 }
 
 form.contact {
-    padding-top: 40px;
+    padding-top: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -396,5 +430,47 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 140px 0 20px 0;
+    padding: 60px 0 10px;
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    .home {
+        width: 100%;
+        padding: 10px;
+    }
+
+    main {
+        width: 100%;
+        padding: 10px;
+    }
+
+    footer {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+
+    .home {
+        width: 80%;
+        padding: 20px;
+    }
+
+    main {
+        width: 80%;
+        padding: 20px;
+    }
+
+    foote {
+        width: 80%;
+        padding: 20px;
+    }
 }
